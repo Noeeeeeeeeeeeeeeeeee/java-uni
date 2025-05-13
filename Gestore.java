@@ -164,14 +164,5 @@ public class Gestore {
         }
         return true;
     }
-    
-    public String cercaCorso (String code, String modifica)
-    {
-        for (Corso c : corsi)
-        {
-            if ((c.getCodice()).equals(code))
-                return c.modificaCorso (modifica);
-        }
-        return "Errore modifica del corso";
-    }
+
 }
