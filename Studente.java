@@ -16,4 +16,15 @@ public class Studente extends Persona {
     public String getCodiceCorso() {
         return codiceCorso;
     }
+
+    public void setCodiceCorso(String codiceCorso) {
+        this.codiceCorso = codiceCorso;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ";" + codiceCorso;
+    }
+    
+    
 }

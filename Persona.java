@@ -37,4 +37,20 @@ public class Persona {
         return cognome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCognome(String cognome) {
+        this.cognome = cognome;
+    }
+    
+    
+    @Override
+    public String toString() {
+        return  matricola + ";" + nome + ";" + cognome;
+    }
+    
+    
+
 }

@@ -9,20 +9,39 @@ package progettouniversita;
  * @author reggianin
  */
 public class IscrizioneAppello {
+
     private String idAppello;
     private String matricolaStudente;
-    
-    public IscrizioneAppello(String idAppello, String idStudente){
-        if("".equals(idAppello)){
+
+    public IscrizioneAppello(String idAppello, String idStudente) {
+        if ("".equals(idAppello)) {
             throw new IllegalArgumentException("Errore : Id dell'appello non valido");
-        }else{
-            this.idAppello=idAppello;
+        } else {
+            this.idAppello = idAppello;
         }
-        
-        if("".equals(idStudente)){
+
+        if ("".equals(idStudente)) {
             throw new IllegalArgumentException("Errore : Matricola dello studente non valido");
-        }else{
-            this.matricolaStudente=idStudente;
+        } else {
+            this.matricolaStudente = idStudente;
         }
     }
+
+    public String getMatricolaStudente() {
+        return matricolaStudente;
+    }
+
+    public void setMatricolaStudente(String matricolaStudente) {
+        this.matricolaStudente = matricolaStudente;
+    }
+
+    public String getIdAppello() {
+        return idAppello;
+    }
+
+    @Override
+    public String toString() {
+        return idAppello + ";" + matricolaStudente;
+    }
+
 }

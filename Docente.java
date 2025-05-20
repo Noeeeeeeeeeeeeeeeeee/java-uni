@@ -24,4 +24,15 @@ public class Docente extends Persona {
     public String getDisciplina() {
         return disciplina;
     }
+
+    public void setDisciplina(String disciplina) {
+        this.disciplina = disciplina;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ";" + disciplina;
+    }
+    
+    
 }

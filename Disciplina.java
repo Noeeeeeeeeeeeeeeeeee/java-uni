@@ -9,7 +9,7 @@ package progettouniversita;
  * @author reggianin
  */
 public class Disciplina {
-    //codice, nome, durata (anni).
+    
     private String codiceDisciplina;
     private String nome;
     private int cfu;
@@ -56,4 +56,27 @@ public class Disciplina {
     public String getCodiceCorso() {
         return codiceCorso;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCodiceCorso(String codiceCorso) {
+        this.codiceCorso = codiceCorso;
+    }
+    
+    
+
+    public void setCfu(int cfu) {
+        this.cfu = cfu;
+    }
+    
+    
+
+    @Override
+    public String toString() {
+        return codiceDisciplina + ";" + nome + ";" + cfu + ";" + codiceCorso;
+    }
+    
+    
 }

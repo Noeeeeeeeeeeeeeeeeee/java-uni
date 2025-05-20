@@ -27,4 +27,37 @@ public class Appello {
             this.codiceDisciplina = codiceDisciplina;
         }
     }
+
+    public String getIdAppello() {
+        return idAppello;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public String getCodiceDisciplina() {
+        return codiceDisciplina;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public void setIdAppello(String idAppello) {
+        this.idAppello = idAppello;
+    }
+
+    public void setCodiceDisciplina(String codiceDisciplina) {
+        this.codiceDisciplina = codiceDisciplina;
+    }
+    
+    
+
+    @Override
+    public String toString() {
+        return idAppello + ";" + data + ";" + codiceDisciplina;
+    }
+    
+    
 }

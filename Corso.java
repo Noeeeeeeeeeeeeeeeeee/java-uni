@@ -46,10 +46,19 @@ public class Corso {
         return durata;
     }
 
-    public String modificaCorso (String modifica) {
-        this.nome = modifica;
-        
-        return "Modifica avvenuta correttamente";
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setDurata(int durata) {
+        this.durata = durata;
+    }
+    
+    
+    
+    @Override
+    public String toString() {
+        return codice + ";" + nome + ";" + durata ;
     }
 
 }
